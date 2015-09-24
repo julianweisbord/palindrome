@@ -15,13 +15,13 @@ int main(int argc, char **argv){
       printf("check %d verified\n", x+1);
       ++check;
       if(check>=input/2){
-        printf("input/2: %d"input/2)
-        printf("Palindrome");
+        printf("input/2: %d\n", input/2);
+        printf("Palindrome!!\n");
         break;
       }
     }
     else{
-      printf("Not palindrome!");
+      printf("Not palindrome!\n");
       break;
     }
     ++i,++x;
