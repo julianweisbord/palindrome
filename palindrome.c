@@ -1,15 +1,22 @@
 #include "stdio.h"
 #include "string.h"
+#include "stdlib.h"
 
 int main(int argc, char **argv){
-
-  int input;
-  for(input = 0; input <strlen(argv[1]); ++input){
-
+  if(argc >2){
+    printf("Must only be one word.\n");
+    exit(0);
   }
+  int input;
+  for(input = 0; input < strlen(argv[1]); ++input){
+  }
+
   printf("Length is %d\n", input);
-  int x,check = 0;
+  //
+  int x= 0;
+  int check =0;
   int i =1;
+  //
   while(1 >0){
     if(argv[1][x] ==argv[1][input -i]){
       printf("check %d verified\n", x+1);
